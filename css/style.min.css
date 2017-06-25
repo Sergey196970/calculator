@@ -1,5 +1,5 @@
 @font-face {
-  font-family: RobotoCondensed-Regular;
+  font-family: RobotoCondensed-Regular, sans-serif;
   src: url(../fonts/RobotoCondensed-Regular.ttf);}
 body {
   font-family: RobotoCondenced-Regular, sans-serif;
