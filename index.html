@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+
+      <main role="main">
+
+        <h1>Калькулятор</h1>
+
+        
+
+        <section class="table-calc">
+        	<div class="spec">
+        		<ul class="spec__list item">
+        			<li class="spec__item item__name">
+        				Отопление
+        			</li>
+        			<li class="spec__item item__price">
+        				Цена
+        			</li>
+        			<li class="spec__item item__quantity">
+        				Количество
+        			</li>
+        			<li class="spec__item item__value">
+        				Стоимость
+        			</li>
+        		</ul>
+        	</div>
+        	<div class="works">
+        		<ul class="works__list">
+        			<li class="works__item works__name item__name">
+        				Монтаж радиатора
+        			</li>
+        			<li class="works__item item__price" data-price="1300">
+        			  1300
+        			</li>
+        			<li class="works__item item__quantity">
+        				<input type="text" class="price" name="w1" value="">
+        			</li>
+        			<li class="works__item abbr">
+        				шт
+        			</li>
+        			<li class="works__item item__value totalS">
+				0
+        			</li>
+        		</ul>
+        		<ul class="works__list">
+        			<li class="works__item works__name item__name">
+        				Монтаж смесителя
+        			</li>
+        			<li class="works__item item__price" data-price="800">
+        			  800
+        			</li>
+        			<li class="works__item item__quantity">
+        				<input type="text" class="price" name="w1" value="">
+        			</li>
+        			<li class="works__item abbr">
+        				шт
+        			</li>
+        			<li class="works__item item__value totalS">
+				0
+        			</li>
+        		</ul>
+        		<ul class="works__list">
+        			<li class="works__item works__name item__name">
+        				Монтаж душкабины
+        			</li>
+        			<li class="works__item item__price" data-price="3300">
+        			  3300
+        			</li>
+        			<li class="works__item item__quantity">
+        				<input type="text" class="price" name="w1" value="">
+        			</li>
+        			<li class="works__item abbr">
+        				шт
+        			</li>
+        			<li class="works__item item__value totalS">
+				0
+        			</li>
+        		</ul>
+        	</div>
+        	<div class="spec">
+        		<ul class="spec__list item">
+        			<li class="spec__item item__name">
+        				Водоснабжение
+        			</li>
+        			<li class="spec__item item__price">
+        				Цена
+        			</li>
+        			<li class="spec__item item__quantity">
+        				Количество
+        			</li>
+        			<li class="spec__item item__value">
+        				Стоимость
+        			</li>
+        		</ul>
+        	</div>
+        	<div class="works">
+        		<ul class="works__list">
+        			<li class="works__item works__name item__name">
+        				Прокладка трубы д 32
+        			</li>
+        			<li class="works__item item__price" data-price="100">
+        			  100
+        			</li>
+        			<li class="works__item item__quantity">
+        				<input type="text" class="price" name="w1" value="">
+        			</li>
+        			<li class="works__item abbr">
+        				п/м
+        			</li>
+        			<li class="works__item item__value totalS">
+				0
+        			</li>
+        		</ul>
+        		<ul class="works__list">
+        			<li class="works__item works__name item__name">
+        				Монтаж водомерного узла
+        			</li>
+        			<li class="works__item item__price" data-price="4800">
+        			  4800
+        			</li>
+        			<li class="works__item item__quantity">
+        				<input type="text" class="price" name="w1" value="">
+        			</li>
+        			<li class="works__item abbr">
+        				к-т
+        			</li>
+        			<li class="works__item item__value totalS">
+				0
+        			</li>
+        		</ul>
+        		<ul class="works__list">
+        			<li class="works__item works__name item__name">
+        				Монтаж умывальника
+        			</li>
+        			<li class="works__item item__price" data-price="1300">
+        			  1300
+        			</li>
+        			<li class="works__item item__quantity">
+        				<input type="text" class="price" name="w1" value="">
+        			</li>
+        			<li class="works__item abbr abbr">
+        				шт
+        			</li>
+        			<li class="works__item item__value totalS">
+				0
+        			</li>
+        		</ul>
+        	</div>
+        	<div class="rezult">
+        		<ul class="total">
+        			<li class="total__name">Общая стоимость работ:</li>
+        			<li class="total__value" id="result">
+			  0
+        			</li>
+        		</ul>
+        	</div>
+        	<div class="clear" id="clear"> 
+        		<p return false;">
+        			ОЧИСТИТЬ ФОРМУ
+        		</p>
+        	</div>
+        </section>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+  
+      </footer>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
