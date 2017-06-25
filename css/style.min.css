@@ -2,18 +2,22 @@
   font-family: RobotoCondensed-Regular;
   src: url(../fonts/RobotoCondensed-Regular.ttf);}
 body {
-  font-family: RobotoCondenced-Regular;
+  font-family: RobotoCondenced-Regular, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #333;
 }
 h1 {
-  width: 200px;;
+  width: 200px;
   margin: 0 auto;
   text-align: center;}
 .description {
-  width: 50%;
+  width: 55%;
   margin: 0 auto;
+  font-family: RobotoCondenced-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333;
   text-align: center;}
 ul,
 .clear {
@@ -21,7 +25,8 @@ ul,
   display: flex;
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  color: #000; }
 .table-calc {
   width: 800px;
   margin: 50px auto;
