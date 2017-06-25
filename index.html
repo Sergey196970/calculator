@@ -3,56 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title>NTH start project</title>
-  <meta name="description" content="">
+  <title>Calculator</title>
+  <meta name="description" content="calculator">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link href="css/style.min.css" rel="stylesheet" media="screen">
-
-  <script>
-    // Маркер работающего javascript
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-    document.addEventListener('DOMContentLoaded', function(){
-      if (window.isMobile !== undefined) {
-        // console.log(isMobile);
-        if(isMobile.any) {
-          var rootClasses = ' is-mobile';
-          for (key in isMobile) {
-            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
-            if(typeof isMobile[key] === 'object' && key !== 'other') {
-              for (type in isMobile[key]) {
-                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
-              }
-            }
-          }
-          document.documentElement.className += rootClasses;
-        }
-      }
-      else {
-        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
-      }
-    });
-
-  </script>
-
-  <link href="img/favicon.ico" rel="icon" type="image/x-icon">
-
 </head>
 
 <body>
+    <h1>Калькулятор</h1>
 
-  <div class="page__inner">
-
-    <div class="page__content">
-
-
-      <main role="main">
-
-        <h1>Калькулятор</h1>
-
-        
-
-        <section class="table-calc">
+    <section class="table-calc">
         	<div class="spec">
         		<ul class="spec__list item">
         			<li class="spec__item item__name">
@@ -205,18 +165,6 @@
         		</p>
         	</div>
         </section>
-      </main>
-
-    </div>
-
-    <div class="page__footer-wrapper">
-      <footer class="page-footer" role="contentinfo">
-  
-      </footer>
-
-    </div>
-
-  </div>
   <script src="js/script.min.js"></script>
 
 </body>
